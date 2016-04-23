@@ -16,6 +16,8 @@ module.exports = {
     publicPath: 'http://localhost:8080/built/'
   },
 
+  devtool: 'source-map',
+
   module: {
     loaders: [
       {

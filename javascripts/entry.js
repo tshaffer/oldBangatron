@@ -2,17 +2,26 @@ require('../less/main.less');
 
 'use strict';
 
-var React = require('react');
-var ReactDOM = require('react-dom');
+// var React = require('react');
+// var ReactDOM = require('react-dom');
+//
+// var Entry = React.createClass({
+//   render: function(){
+//     return (
+//       <div className="myDiv">
+//         Best Pizza ever!
+//       </div>
+//     )
+//   }
+// });
+//
+// ReactDOM.render(<Entry />, document.getElementById('content'));
 
-var Entry = React.createClass({
-  render: function(){
-    return (
-      <div className="myDiv">
-        Hello Electron!
-      </div>
-    )
-  }
-});
+import React from 'react';
+import {render} from 'react-dom';
+// import App from './App';
 
-ReactDOM.render(<Entry />, document.getElementById('content'));
+render(
+    <div className="myDiv">pizza</div>,
+    document.getElementById('content')
+);
