@@ -1,9 +1,11 @@
 body {
     height: 100%;
+    color: black;
 }
 
 .shafferotoContainer {
-    width: 1400px;
+    /*width: 1400px;*/
+    width: 800px;
 }
 
 .photoPageContainer {
@@ -55,7 +57,7 @@ body {
 }
 
 .metadata {
-    flex: 1;
+    flex: 2;
 }
 
 .metadataSubheading {
