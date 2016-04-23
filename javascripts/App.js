@@ -3,11 +3,17 @@
  */
 import React, {Component} from 'react';
 
+import MediaLibrary from './components/media_library';
+import Playlist from './components/playlist';
+
 class App extends Component {
     render() {
         return (
-            <div className = "container">
+            <div className = "container baContainer">
                 Eat Pizza!!
+                <MediaLibrary />
+                <Playlist />
+                And Ice Cream
             </div>
         );
     }

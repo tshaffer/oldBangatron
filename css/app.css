@@ -1,4 +1,21 @@
 body {
+    /*height: 100%;*/
+    width: 1400px;
+    height: 1000px;
+}
+
+.baContainer {
+    width: 1400px;
+}
+
+
+
+
+
+
+
+
+body {
     width: 1400px;
     height: 1000px;
 }
