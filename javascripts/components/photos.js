@@ -107,19 +107,19 @@ class Photos extends Component {
         const url = "http://localhost:3000/";
         const getPhotosUrl = url + "getPhotos";
 
-        $.get({
-            url: getPhotosUrl,
-            dataType: 'json',
-            cache: false,
-            success: function(data) {
-                console.log("number of photos retrieved is: " + data.photos.length.toString());
-                this.updatePhotos(data.photos);
-            }.bind(this),
-            error: function(xhr, status, err) {
-                console.log("errors retrieving photos");
-                console.error(getPhotosUrl, status, err.toString());
-            }.bind(this)
-        });
+        // $.get({
+        //     url: getPhotosUrl,
+        //     dataType: 'json',
+        //     cache: false,
+        //     success: function(data) {
+        //         console.log("number of photos retrieved is: " + data.photos.length.toString());
+        //         this.updatePhotos(data.photos);
+        //     }.bind(this),
+        //     error: function(xhr, status, err) {
+        //         console.log("errors retrieving photos");
+        //         console.error(getPhotosUrl, status, err.toString());
+        //     }.bind(this)
+        // });
     }
 
     queryPhotos (querySpec) {
