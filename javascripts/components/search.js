@@ -41,21 +41,21 @@ class Search extends Component {
 
         var self = this;
 
-        // $.get({
-        //     url: getTagsUrl,
-        //     success: function(result) {
-        //         console.log("getTags successful");
-        //         result.Tags.forEach(function(tag, index){
-        //             let tagObj = { name: tag.label, id: index};
-        //             self.state.tags.push(tagObj);
-        //         });
-        //         self.addedTag = self.state.tags[0].name;
-        //     }.bind(this),
-        //     error: function(xhr, status, err) {
-        //         console.log("errors retrieving tags in getTags");
-        //         console.error(getTagsUrl, status, err.toString());
-        //     }.bind(this)
-        // });
+        $.get({
+            url: getTagsUrl,
+            success: function(result) {
+                console.log("getTags successful");
+                result.Tags.forEach(function(tag, index){
+                    let tagObj = { name: tag.label, id: index};
+                    self.state.tags.push(tagObj);
+                });
+                self.addedTag = self.state.tags[0].name;
+            }.bind(this),
+            error: function(xhr, status, err) {
+                console.log("errors retrieving tags in getTags");
+                console.error(getTagsUrl, status, err.toString());
+            }.bind(this)
+        });
     }
 
     prependZero(str) {
