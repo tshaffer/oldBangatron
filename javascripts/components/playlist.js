@@ -20,8 +20,8 @@ class Playlist extends Component {
         console.log("Playlist: eat pizza");
 
         return (
-            <div>
-                Playlist
+            <div className="playlistDiv">
+                <p>Zone>Zone 1: Video or Images: Playlist</p>
             </div>
         );
     }

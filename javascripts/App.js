@@ -10,10 +10,8 @@ class App extends Component {
     render() {
         return (
             <div className = "container baContainer">
-                Eat Pizza!!
                 <MediaLibrary />
                 <Playlist />
-                And Ice Cream
             </div>
         );
     }
